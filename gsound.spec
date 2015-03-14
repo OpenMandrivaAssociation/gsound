@@ -80,7 +80,7 @@ find $RPM_BUILD_ROOT -name '*.la' -delete
 %files -n %{girname}
 %{_libdir}/girepository-1.0/GSound-1.0.typelib
 
-%files devel
+%files -n %{develname}
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/gsound.pc
