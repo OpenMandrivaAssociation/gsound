@@ -17,6 +17,7 @@ Source0:        http://download.gnome.org/sources/gsound/1.0/gsound-%{version}.t
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(libcanberra)
 BuildRequires:  vala-tools
+BuildRequires:  pkgconfig(libvala-0.28)
 
 Requires:	%{girname} = %{EVRD}
 
