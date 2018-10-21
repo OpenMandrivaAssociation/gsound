@@ -3,8 +3,8 @@
 %define devname %mklibname -d %{name}
 
 Name:           gsound
-Version:        1.0.1
-Release:        2
+Version:        1.0.2
+Release:        1
 Summary:        Small gobject library for playing system sounds
 
 License:        LGPLv2
