@@ -66,9 +66,9 @@ developing applications that use %{name}.
 %{_libdir}/pkgconfig/gsound.pc
 %dir %{_datadir}/gir-1.0
 %{_datadir}/gir-1.0/GSound-1.0.gir
-%dir %{_datadir}/gtk-doc
-%dir %{_datadir}/gtk-doc/html
-%{_datadir}/gtk-doc/html/gsound
+#dir %{_datadir}/gtk-doc
+#dir %{_datadir}/gtk-doc/html
+#{_datadir}/gtk-doc/html/gsound
 %dir %{_datadir}/vala
 %dir %{_datadir}/vala/vapi
 %{_datadir}/vala/vapi/gsound.*
