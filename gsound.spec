@@ -3,8 +3,8 @@
 %define devname %mklibname -d %{name}
 
 Name:           gsound
-Version:        1.0.2
-Release:        2
+Version:        1.0.3
+Release:        1
 Summary:        Small gobject library for playing system sounds
 
 License:        LGPLv2
@@ -15,6 +15,7 @@ BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(libcanberra)
 BuildRequires:	pkgconfig(vapigen)
 BuildRequires:  vala-tools
+BuildRequires:  meson
 
 
 %description
@@ -43,13 +44,12 @@ developing applications that use %{name}.
 %prep
 %setup -q
 
-
 %build
-%configure --enable-vala
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %files
 %doc COPYING README
